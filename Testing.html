@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .required::after {
+            content: '*';
+          }  
+          [data-tooltip] {
+            position: relative;
+          }
+          [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background-color: lightgrey;
+          }
+        </style>
+    </head>
+<body>
+    <label class="required">First Name</label>
+    <input type="test" requried>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+<br>
+<body>
+    <label class="required">User Name</label>
+    <input type="test" required>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+<br>
+<body>
+    <label class="required">User Email Address</label>
+    <input type="test" required>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+<br>
+<body>
+    <label class="required">Confirm User Email Address</label>
+    <input type="test" required>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+ <br>
+<body>
+    <label class="required">Any questions?</label>
+    <input type="test" required>
+    <button data-tooltip="Tooltip">Insert question heres</button>
+</body>
+</html>
